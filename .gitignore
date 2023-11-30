@@ -1,0 +1,11 @@
+# .gitignore
+
+# Ignore Node.js modules
+node_modules/
+
+# Ignore TypeScript configuration file
+tsconfig.json
+
+# Ignore package.json and package-lock.json
+package.json
+package-lock.json
