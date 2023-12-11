@@ -1,6 +1,7 @@
 "use strict";
 function countDown(limit) {
     let count = limit;
+    console.log('CountDown of ' + limit + ' sec Starts....');
     function timeout() {
         setTimeout(() => {
             console.log(count, ' sec remaining');
@@ -11,5 +12,8 @@ function countDown(limit) {
         }
     }
     let x = setInterval(timeout, 1000);
+    setTimeout(() => {
+        console.log("CountDown Finished");
+    }, (limit + 2) * 1000);
 }
-countDown(4);
+countDown(10);
